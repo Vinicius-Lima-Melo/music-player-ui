@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>YouMusic</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="msapplication-TileColor" content="#603cba">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="center">
+			<div class="logo">
+				<img src="logo/logo2.png" alt="">
+				<h2>YouMusic</h2>
+				<!-- <img src="logo/logotipo2.png" alt=""> -->
+			</div>
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#">Sobre</a>
+				<a href="#">Suporte</a>
+				<a href="#" class="btn-menu" id="btn-abrir-form-login">Fazer login</a>
+			</div>
+			<div class="menu-mobile">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="center">
+			<div class="main__cta">
+				<h2>Ouça as melhores músicas</h2>
+				<h2>em qualquer lugar.</h2>
+				<p>Totalmente grátis!</p>
+				<button id="btn-abrir-form-conta">Começar agora!</button>
+			</div>
+
+			<div class="diferenciais">
+				<div class="diferencial-single">
+					<i class="fas fa-music"></i>
+					<h2>As melhores músicas</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada.</p>
+				</div>
+				<div class="diferencial-single">
+					<i class="fas fa-user"></i>
+					<h2>Para todas as idades</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada.</p>
+				</div>
+				<div class="diferencial-single">
+					<i class="fas fa-download"></i>
+					<h2>Download ilimitado</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada.</p>
+				</div>
+				<div class="diferencial-single">
+					<i class="fas fa-money-check-alt"></i>
+					<h2>Totalmente gratuito</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="sobre">
+		<div class="center">
+			<div class="chamada-sobre">
+				<h2>Sobre o projeto</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada.</p>
+			</div>
+			<div class="conteudo-sobre">
+				<p>Projeto brabo, vlw gui, ja conheço praticamente todas as propriedades do css to em busca de projetos agr.
+				me ajudou mt a treinar Projetoui, ja conheço praticamente todas as propriedades do css to em busca de projetos agr.
+				me ajudou mt a treinar Projeto
+					<br>
+					<span><i class="fas fa-check-double"></i>
+						 Item 1
+						</span><br>
+					<span><i class="fas fa-check-double"></i>
+						Item 2
+					</span>
+				</p>
+				<p>Projeto brabo, vlw gui, ja conheço praticamente todas as propriedades do css to em busca de projetos agr, me ajudou mt a treinarProjeto brabo, vlw gui, ja conheço praticamente todas as propriedades do css to em busca de projetos agr, me ajudou mt a treinar</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="conquistas">
+		<div class="center">
+			<div class="conquista-single">
+				<h2>+100 milhões</h2>
+				<p>Músicas</p>
+			</div>
+			<div class="conquista-single">
+				<h2>+80 mil</h2>
+				<p>Artistas</p>
+			</div>
+			<div class="conquista-single">
+				<h2>+30 mil</h2>
+				<p>Usuarios</p>
+			</div>
+			<div class="conquista-single">
+				<h2>+10 mil</h2>
+				<p>Playlists</p>
+			</div>
+		</div>
+	</section>
+
+
+<div class="pop-up" id="bgModal">
+	<div class="modal" id="modal-login">
+		<div class="modal-header">
+			<h2>Login</h2>
+			<i class="fas fa-times close-modal"></i>
+		</div>
+		<div class="modal-body">
+			<label for="email">Email</label>
+			<input type="email" id="email" placeholder="Email">
+
+			<label for="senha">Senha</label>
+			<input type="password" id="senha" placeholder="Senha">
+			
+			<div class="form-check">
+		      	<input type="checkbox" id="remember">
+		      	<label for="remember">
+		       		Mantenha-me conectado
+		      	</label>
+		    </div>
+
+			<input type="submit" class="btn-login" value="Acessar conta">
+
+			<a href="#">Esqueci minha senha</a>
+		</div>
+	</div>
+
+
+	<div class="modal" id="modal-nova-conta">
+		<div class="modal-header">
+			<h2>Criar conta</h2>
+			<i class="fas fa-times close-modal"></i>
+		</div>
+		<div class="modal-body">
+			<label for="username">Username</label>
+			<input type="username" id="username" placeholder="Username">
+
+			<label for="email">Email</label>
+			<input type="email" id="email" placeholder="Email">
+
+			<label for="senha">Senha</label>
+			<input type="password" id="senha" placeholder="Senha">
+			
+			<div class="form-check">
+		      	<input type="checkbox" id="termos">
+		      	<label for="termos">
+		       		Eu li e concordo com os <a href="#" style="display: inline;">Termos de uso</a>.
+		      	</label>
+		    </div>
+
+			<input type="submit" class="btn-login" value="Criar conta">
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
